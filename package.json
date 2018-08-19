@@ -1,0 +1,33 @@
+{
+  "name": "webpack-learning-notes",
+  "version": "1.0.0",
+  "description": "webpack learning notes and demos",
+  "main": "index.js",
+  "scripts": {
+    "start-base": "webpack --config ./base/webpack.config.js",
+    "start-entry": "webpack --config ./entry/webpack.config.js",
+    "start-dev-server": "webpack-dev-server --config ./dev-server/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arashethis/webpack-learning-notes.git"
+  },
+  "keywords": [],
+  "author": "arashethis@outlook.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arashethis/webpack-learning-notes/issues"
+  },
+  "homepage": "https://github.com/arashethis/webpack-learning-notes#readme",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
+}
