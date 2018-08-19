@@ -6,6 +6,7 @@
   "scripts": {
     "start-base": "webpack --config ./base/webpack.config.js",
     "start-entry": "webpack --config ./entry/webpack.config.js",
+    "start-output": "webpack --config ./output/webpack.config.js",
     "start-dev-server": "webpack-dev-server --config ./dev-server/webpack.config.js"
   },
   "repository": {
