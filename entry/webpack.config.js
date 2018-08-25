@@ -5,8 +5,8 @@ module.exports = {
   mode: 'none',
   context: path.resolve(__dirname),
   entry: {
-    chunkA: './src/moduleA',
-    chunkB: ['./src/moduleB', './src/moduleC'],
+    chunkA: './src/module-a',
+    chunkB: ['./src/module-b1', './src/module-b2'],
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -14,7 +14,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Webpack Base Example',
+      title: 'Webpack Entry Example',
     })
   ]
 }

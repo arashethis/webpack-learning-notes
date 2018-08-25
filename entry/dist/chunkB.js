@@ -100,7 +100,7 @@ module.exports = __webpack_require__(3);
 function component() {
   let element = document.createElement('h1');
 
-  element.innerHTML = 'I was injected from moduleB';
+  element.innerHTML = 'I was injected from module-b1';
 
   return element;
 }
@@ -114,7 +114,7 @@ document.body.appendChild(component());
 function component() {
   let element = document.createElement('h1');
 
-  element.innerHTML = 'I was injected from moduleC';
+  element.innerHTML = 'I was injected from module-b2';
 
   return element;
 }
