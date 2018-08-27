@@ -29,8 +29,8 @@ module.exports = {
   watch: true, // DevServer默认开启监听模式
   watchOptions: {
     ignored: /node_modules/, // 默认为空
-    aggregateTimeout: 300,  // 默认300mms
-    poll: 1000,  // 默认为1000/s
+    aggregateTimeout: 300,  // 默认为 300ms 后重新构建
+    poll: 1000,  // 默认为 1000ms 询问一次
   },
   module: {
     rules: [
@@ -45,7 +45,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Webpack Base Example',
+      title: 'Webpack DevServer Example',
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
