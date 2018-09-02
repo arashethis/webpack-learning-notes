@@ -16,7 +16,9 @@
     "start-node-api-dev": "node ./node-api/scripts/server.js",
     "start-node-api-build": "node ./node-api/scripts/build.js",
     "start-dev-middleware": "node ./dev-middleware/server.js",
-    "start-dev-server": "webpack-dev-server --config ./dev-server/webpack.config.js"
+    "start-dev-server": "webpack-dev-server --config ./dev-server/webpack.config.js",
+    "start-dll-plugin": "webpack --config ./dll-plugin/webpack.config.js",
+    "start-dll-plugin:dll": "webpack --config ./dll-plugin/webpack.dll.config.js"
   },
   "repository": {
     "type": "git",
