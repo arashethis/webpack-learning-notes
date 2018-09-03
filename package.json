@@ -22,7 +22,8 @@
     "dll-plugin:dll": "webpack --config ./dll-plugin/webpack.dll.config.js",
     "tree-shaking": "webpack --config ./tree-shaking/webpack.config.js",
     "code-spliting": "webpack --config ./code-spliting/webpack.config.js",
-    "dynamic-import": "webpack --config ./dynamic-import/webpack.config.js"
+    "dynamic-import": "webpack --config ./dynamic-import/webpack.config.js",
+    "lazy-loading": "webpack --config ./lazy-loading/webpack.config.js"
   },
   "repository": {
     "type": "git",
