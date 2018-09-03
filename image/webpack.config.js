@@ -28,6 +28,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack Image Example',
+      favicon: '../favicon.ico'
     })
   ]
 }

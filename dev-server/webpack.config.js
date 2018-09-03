@@ -46,6 +46,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack DevServer Example',
+      favicon: '../favicon.ico'
     }),
     new webpack.HotModuleReplacementPlugin()
   ],

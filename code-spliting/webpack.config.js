@@ -20,6 +20,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack CodeSpliting Example',
+      favicon: '../favicon.ico'
     })
   ]
 }

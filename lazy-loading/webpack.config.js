@@ -13,6 +13,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack LazyLoading Example',
+      favicon: '../favicon.ico'
     })
   ]
 }

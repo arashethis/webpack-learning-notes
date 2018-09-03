@@ -32,6 +32,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack Vue Example',
+      favicon: '../favicon.ico'      
     }),
     new VueLoaderPlugin()
   ]

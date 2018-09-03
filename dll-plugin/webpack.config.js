@@ -14,6 +14,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Webpack DllPlugin Example',
       template: 'index.html',
+      favicon: '../favicon.ico'
     }),
     new webpack.DllReferencePlugin({
       manifest: require('./dist/vendor.dll.manifest.json')

@@ -205,7 +205,6 @@ function getComponent() {
   return __webpack_require__.e(/* import() | lodash */ 1).then(__webpack_require__.t.bind(null, 1, 7))
   .then(({ default: _ }) => {
     var element = document.createElement('div');
-    console.log(_)
     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
     return element;
   })

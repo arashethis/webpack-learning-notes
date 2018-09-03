@@ -44,6 +44,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack Eslint Example',
+      favicon: '../favicon.ico'
     }),
     new webpack.HotModuleReplacementPlugin()
   ],

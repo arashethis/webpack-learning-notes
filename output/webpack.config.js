@@ -13,6 +13,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack Output Example',
+      favicon: '../favicon.ico'
     })
   ]
 }

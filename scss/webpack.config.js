@@ -20,6 +20,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack Scss Example',
+      favicon: '../favicon.ico'
     })
   ]
 }
