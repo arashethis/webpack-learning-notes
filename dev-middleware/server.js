@@ -6,8 +6,6 @@ const webpackMiddleware = require('webpack-dev-middleware');
 const config = require('./webpack.config.js');
 config.entry = ['./dev-client.js'].concat(config.entry);
 
-console.log(config.entry)
-
 const app = express();
 
 const compiler = webpack(config);
