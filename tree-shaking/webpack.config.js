@@ -12,7 +12,7 @@ module.exports = {
   optimization: {
     minimize: true,
     providedExports: true,
-    usedExports: true
+    usedExports: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
