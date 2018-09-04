@@ -24,7 +24,8 @@
     "code-spliting": "webpack --config ./code-spliting/webpack.config.js",
     "dynamic-import": "webpack --config ./dynamic-import/webpack.config.js",
     "lazy-loading": "webpack --config ./lazy-loading/webpack.config.js",
-    "mode": "webpack --config ./mode/webpack.config.js"
+    "mode": "webpack --config ./mode/webpack.config.js",
+    "css-prod": "webpack --config ./css-prod/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -52,7 +53,9 @@
     "express": "^4.16.3",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
     "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^12.0.0",
     "postcss-loader": "^3.0.0",
