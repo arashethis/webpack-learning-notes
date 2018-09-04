@@ -5,6 +5,10 @@ module.exports = {
   mode: 'none',
   context: path.resolve(__dirname),
   entry: './src/index.js',
+  // entry: {
+  //   index: './src/index.js',
+  //   another: './src/another-module.js'
+  // },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
@@ -14,6 +18,10 @@ module.exports = {
     usedExports: true,
     runtimeChunk: 'single',
     concatenateModules: true,
+    splitChunks: {
+      minSize: 0,
+      chunks: 'all',
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({
