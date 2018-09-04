@@ -165,7 +165,7 @@ __webpack_require__.r(__webpack_exports__);
 function component() {
   let element = document.createElement('h1');
 
-  element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello ', 'webpack']);
+  element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello', 'webpack'], ' ');
 
   return element;
 }
