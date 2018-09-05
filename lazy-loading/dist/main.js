@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"1":"vendors~lodash"}[chunkId]||chunkId) + ".chunk.js"
+/******/ 		return __webpack_require__.p + "" + ({"1":"utils"}[chunkId]||chunkId) + ".chunk.js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -204,11 +204,24 @@
 var btn = document.createElement('button')
 btn.innerHTML = 'Click Me!';
 
+// btn.onclick = function () {
+//   import(/* webpackChunkName: "lodash" */ 'lodash')
+//   .then(({ default: _ }) => {
+//     var element = document.createElement('div');
+//     element.innerHTML = _.join(['Hello', 'Webpack'], ' ');
+//     document.body.appendChild(element);
+//   })
+// }
+
 btn.onclick = function () {
-  __webpack_require__.e(/* import() | lodash */ 1).then(__webpack_require__.t.bind(null, 1, 7))
-  .then(({ default: _ }) => {
+  __webpack_require__.e(/* import() | utils */ 1).then(__webpack_require__.bind(null, 1)).then(({add}) => {
     var element = document.createElement('div');
-    element.innerHTML = _.join(['Hello', 'Webpack'], ' ');
+    element.innerHTML = `10 + 20 = ${add(10, 20)}`;
+    document.body.appendChild(element);
+  })
+  __webpack_require__.e(/* import() | utils */ 1).then(__webpack_require__.bind(null, 2)).then(({square}) => {
+    var element = document.createElement('div');
+    element.innerHTML = `10 * 10 = ${square(10)}`;
     document.body.appendChild(element);
   })
 }
