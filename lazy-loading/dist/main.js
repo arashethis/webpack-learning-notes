@@ -219,6 +219,11 @@ btn.onclick = function () {
     element.innerHTML = `10 + 20 = ${add(10, 20)}`;
     document.body.appendChild(element);
   })
+  __webpack_require__.e(/* import() | utils */ 1).then(__webpack_require__.bind(null, 2)).then(({square}) => {
+    var element = document.createElement('div');
+    element.innerHTML = `10 * 10 = ${square(10)}`;
+    document.body.appendChild(element);
+  })
 }
 
 document.body.appendChild(btn);

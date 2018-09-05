@@ -11,9 +11,14 @@ btn.innerHTML = 'Click Me!';
 // }
 
 btn.onclick = function () {
-  import(/* webpackChunkName: "utils" */ './utils.js').then(({add}) => {
+  import(/* webpackChunkName: "utils" */ './add.js').then(({add}) => {
     var element = document.createElement('div');
     element.innerHTML = `10 + 20 = ${add(10, 20)}`;
+    document.body.appendChild(element);
+  })
+  import(/* webpackChunkName: "utils" */ './square.js').then(({square}) => {
+    var element = document.createElement('div');
+    element.innerHTML = `10 * 10 = ${square(10)}`;
     document.body.appendChild(element);
   })
 }

@@ -10,5 +10,16 @@ function add (a, b) {
   return a + b
 }
 
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "square", function() { return square; });
+function square (a) {
+  return a * a
+}
+
 /***/ })
 ]]);
