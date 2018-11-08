@@ -10,6 +10,11 @@ module.exports = {
     filename: '[name].js',
     chunkFilename: '[name].chunk.js'
   },
+  optimization: {
+    splitChunks: {
+      minSize: 0
+    }
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack LazyLoading Example',

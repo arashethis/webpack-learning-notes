@@ -1,0 +1,1 @@
+export default 'str from common.js';
